@@ -1,0 +1,85 @@
+<html>
+<head><title>Suma</title></head>
+                              
+
+<center><img src="uno.png" width="1200" height="120"></center><br>
+<p><font color=" black" size= "4" face="Tahoma"><center>COLEGIO DE ESTUDIOS CIENTIFICOS Y TECNOLOGICOS DEL ESTADO DE MÉXICO 
+PLANTEL IXTLAHUACA </center></font></p>
+
+<p><font color ="black" size="3" face="Tahoma"><center><strong>Elaborado por:</strong>Jorge Moreno Garcia
+<strong>fecha de Elaboracion:</strong>11 de ABRIL de 2024.<strong>Hora:</strong>11:10 a.m.
+
+<p><font color="black" size="4" face="Tahoma"><center><strong> CONVERCION DE UNIDADES </strong></center><br>
+
+<script>
+function sumar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+var n3= parseInt(document.MyForm.txtNumero3.value);
+var n4= parseInt(document.MyForm.txtNumero4.value);
+var n5= parseInt(document.MyForm.txtNumero5.value);
+var n6= parseInt(document.MyForm.txtNumero6.value);
+var n7= parseInt(document.MyForm.txtNumero7.value);
+document.MyForm.txtResultado.value=(n1+n2+n3+n4+n5+n6+n7)/7;
+}
+</script>
+
+</script>
+
+<body>
+<center><table width= "1000"  border="1">
+<form name="MyForm">
+<tr>
+<td width="200"><label>calculo diferencial:</label></td>
+<td width="200"><input type="text" name="txtNumero1"></td>
+<td width="200" rowspan="4"><img src="six.png"></td>
+</tr>
+
+<tr>
+<td><label>ingles IV:</label></td>
+<td><input type="text" name="txtNumero2"></td>
+</tr>
+<tr>
+<td width="200"><label>Fisica I:</label></td>
+<td width="200"><input type="text" name="txtNumero3"></td>
+</tr>
+
+<tr>
+<td><label>Ecologia:</label></td>
+<td><input type="text" name="txtNumero4"></td>
+</tr>
+
+<tr>
+<td width="200"><label>Submodulo I:</label></td>
+<td width="200"><input type="text" name="txtNumero5"></td>
+</tr>
+
+<tr>
+<td><label>Submodulo II:</label></td>
+<td><input type="text" name="txtNumero6"></td>
+</tr>
+
+<tr>
+<td><label>Submodulo III:</label></td>
+<td><input type="text" name="txtNumero7"></td>
+</tr>
+
+<tr>
+<td><label>Mostrar Resultado:</label></td>
+<td><input type="text" name="txtResultado"></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="button" value="SUMA" onclick="sumar()">
+</tr>
+
+</form>
+</table>
+</body>
+<center><br><table border="0"  width= "1200"></br></center>
+<tr>
+<center><table border="0"  width= "1200"></center>
+</tr>
+</html>
+
