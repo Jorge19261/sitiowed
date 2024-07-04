@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+   <audio src="mii.mp3" autoplay="autoplay" loop="loop"></audio>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: ;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, Orange, #008bb5);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: slideInDown 1s ease-out;
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+     background: linear-gradient(135deg, Yellow, #005bb5);
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #00315d;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 40px 20px;
+            min-height: calc(100vh - 180px); /* Ajustar para tener en cuenta el header y footer */
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .content {
+            width: 80%;
+            text-align: left;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+        }
+
+        .card-content p {
+            margin: 0;
+            color: #666;
+        }
+
+        footer {
+ background: linear-gradient(135deg, Coral, #005bb5);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<center><font color="Red"><font face ="century gothic"></strong></font size></img></font color></center></td></font color>
+<header>
+    <h1>Protecto Reforesta hoy para respirar mañana</h1>
+</header>
+
+<nav>
+    <a href="#" class="nav-link" data-target="nosotros">Imagenes</a>
+    <a href="#" class="nav-link" data-target="servicios">Video</a>
+    <a href="#" class="nav-link" data-target="noticias">Documento</a>
+</nav>
+
+<div class="container">
+    <div class="content" id="nosotros">
+        <h2>Imagenes</h2>
+        <p><img src="miaa.png" widht="150" height="160"><img src="mm.png" widht="150" height="250"><img src="dix.png" widht="150" height="250"><img src="chaa.png" widht="150" height="250"><img src="ooo.png" widht="150" height="250"><img src="lgan.jpg" widht="150" height="250"><img src="pat.png" widht="150" height="250"><img src="bon.png" widht="150" height="250"><img src="laxx.jpg" widht="150" height="250"><img src="jj.jpg" widht="150" height="250"><img src="laxx.png" widht="150" height="250"></p> 
+    </div>
+    <div class="content" id="servicios">
+        <h2>Video</h2>
+<p><center><p> <video widht="400" height="260"controls><source src="qw.mp4" type="video/mp4"><source src="56.webm" type="video/webm"></center></video> </p></p>
+
+       
+    </div>
+    <div class="content" id="noticias">
+        <h2>Documento</h2>
+        <p><center><p> <a href="Proyecto.docx"> Ver portafolio de evidencia</a> </p></p>
+    </div>
+    <div class="content" id="contacto">
+        <h2>Imagenes</h2>
+        <p><img src="58.JPEG" widht="150" height="160"></p>
+    </div>
+    <div class="content" id="frame">
+        <iframe src="leccion 12.html" width="100%" height="500px" frameborder="0"></iframe>
+    </div>
+</div>
+
+<footer>
+    <p>©Todos los derechos reservados a Jorge Moreno Garcia<br> no se permite la reproduccion de este documento ni su cooperacion<br> a un sistema informativo de cualquier actorizacion previa</p>
+</footer>
+
+<script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const contents = document.querySelectorAll('.content');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const target = link.getAttribute('data-target');
+           
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+           
+            document.getElementById(target).classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>
